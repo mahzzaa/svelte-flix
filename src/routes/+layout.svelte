@@ -1,17 +1,31 @@
 <script>
-  import '../style.css';
+  import "../style.css";
 </script>
 
 <nav>
-  <a href="/">
-    SvelteFlix
-  </a>
+  <a href="/"> SvelteFlix </a>
 
   <div class="links">
     <a href="/search"> Search</a>
     <a href="/watchlist"> Watchlist</a>
     <a href="/login"> Log in</a>
-
   </div>
 </nav>
 
+<style>
+  nav {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--column);
+    padding: 0 var(--side);
+    color: var(--accent);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
