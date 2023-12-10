@@ -11,7 +11,7 @@
     images.logos.find((image) => image.iso_639_1 === "en") || images.logos[0];
 </script>
 
-<a href="/movie/{movie.id}">
+<a href="/movie/{movie.id}" class="column">
   <img
     class="backdrop"
     src={media(backdrops.file_path, 1280)}
